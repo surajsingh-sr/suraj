@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Suraj Singh Portfolio - Software Engineer and Web Developer. Explore my projects,
+                                     skills, resume, and achievements in web development, Java, Spring Boot, 
+                                     and modern technologies.">
+<meta name="keywords" content="Suraj Singh, Software Engineer, Web Developer, Java Developer, Portfolio, Fresher Developer, 
+                                      HTML CSS JavaScript, Spring Boot, GitHub Portfolio, India Developer">
+<meta name="author" content="Suraj Singh">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<meta property="og:title" content="Suraj Singh | Software Engineer Portfolio">
+<meta property="og:description" content="Passionate Software Engineer & Web Developer. Check my projects, skills, and resume.">
+<meta property="og:image" content="SR logo.jpeg">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Suraj Singh Portfolio">
+<meta name="twitter:description" content="Software Engineer | Web Developer | Fresher">
+<meta name="twitter:image" content="SR logo.jpeg">
+<title>Suraj Singh | Dev </title>
+<link rel="icon" type="image/png" href="SR logo.jpeg">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<!-- NAV -->
+<nav>
+<a href="#" class="nav-logo">
+    <img src="./images/SR logo.jpeg" alt="Logo">
+    <span></span>
+</a>
+
+  <!-- <div class="nav-logo">Suraj Singh</div> -->
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#hobbies">Hobbies</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+  </ul>
+  <a href="#resume-section" class="nav-resume">Resume</a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#education" onclick="closeMenu()">Education</a>
+  <a href="#skills" onclick="closeMenu()">Skills</a>
+  <a href="#hobbies" onclick="closeMenu()">Hobbies</a>
+  <a href="#gallery" onclick="closeMenu()">Gallery</a>
+  <a href="#resume-section" onclick="closeMenu()">Resume</a>
+</div>
+ 
+<!-- HERO -->
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="scanlines"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Software Engineer. </div>
+    <h1 class="hero-title">Hi, I am<br><em>Suraj Singh</em></h1>
+    <p class="hero-desc">A passionate <strong>Information technology</strong> with <strong> fresher </strong> of hands-on development experience — building efficient and scalable digital solutions — turning ideas into impactful web experiences.</p>
+    <div class="hero-btns">
+      <a href="#skills" class="btn-teal">View Skills</a>
+      <a href="#about" class="btn-ghost">About Me</a>
+    </div>
+    <div class="hero-social">
+      <a href="https://www.linkedin.com/in/surajsinghsr?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-link" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.44v6.3zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.21 24 24 23.23 24 22.27V1.73C24 .77 23.21 0 22.22 0z"/></svg>
+      </a>
+      <a href="https://x.com/surajsingh_sr" target="_blank" class="social-link" aria-label="X (Twitter)">
+        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="https://github.com/surajsingh-sr" target="_blank" class="social-link" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.929.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .322.216.694.825.576C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="https://instagram.com/_sr.suraj" target="_blank" class="social-link" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+    
+
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-n">fresher</div><div class="stat-l">Years Exp</div></div>
+    <div class="stat"><div class="stat-n">11</div><div class="stat-l">Skills</div></div>
+    <div class="stat"><div class="stat-n">4</div><div class="stat-l">Hobbies</div></div>
+  </div>
+</section>
+ <center>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="sec-label reveal">Who I Am</p>
+  <h2 class="sec-title reveal">About <em>Me</em></h2>
+  <div class="sec-bar reveal"></div>
+  <div class="about-grid">
+    <div class="about-photo-wrap reveal">
+      <!-- <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80&fit=crop&crop=face" alt="Dr. Suraj — Profile Photo"/> -->
+      <img src="./images/6161448817878832417.jpg" alt=" Suraj — Profile Photo"/>
+    </div>
+    <div class="about-text reveal">
+      <p>Hello! I'm <strong> Suraj Singh</strong>, motivated and detail-oriented Software Engineering graduate with a strong foundation in web development and modern programming technologies. As a fresher, I bring a solid understanding of Java, Spring Boot, and front-end technologies such as HTML, CSS, and JavaScript, along with a passion for building efficient and user-friendly applications.</strong>, I have hands-on experience working on academic and personal projects, where I developed skills in backend development, RESTful APIs, and system design basics. I am also familiar with tools and technologies like Git, IntelliJ IDEA, and Kafka, which help me build scalable and maintainable solutions.</p>
+      <p>I am eager to start my professional journey in a dynamic environment where I can contribute to real-world projects, continuously learn new technologies, and grow as a developer. I value clean code, problem-solving, and collaboration, and I am committed to delivering high-quality results.</p>
+      <p>My goal is to grow into a skilled and contribute positively to work  while continuing to learn and develop in this field.</p>
+      <div class="about-chips">
+        <span class="chip">Software Engineer</span>
+        <span class="chip">Web developer</span>
+        <span class="chip">Fresher</span>
+        <!-- <span class="chip">MBBS Graduate</span> -->
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- EDUCATION -->
+<section id="education">
+  <p class="sec-label reveal">Academic Journey</p>
+  <h2 class="sec-title reveal">My <em>Education</em></h2>
+  <div class="sec-bar reveal"></div>
+  <div class="edu-timeline">
+    <div class="edu-item reveal">
+      <div class="edu-dot"></div>
+      <div class="edu-year">Up to 2021 · School</div>
+      <div class="edu-degree">Secondary & Senior Secondary</div>
+      <div class="edu-inst">M.N.J.I School kannauj, India</div>
+      <p class="edu-desc">Completed schooling with a strong Science stream — Physics, Chemistry, and Mathematics. Secured distinction in board examinations and developed a passion for the life sciences from an early age.</p>
+    </div>
+    <div class="edu-item reveal">
+      <div class="edu-dot"></div>
+      <div class="edu-year">2021 – 2023 · School</div>
+      <div class="edu-degree">Pre-College (11th & 12th)</div>
+      <div class="edu-inst">M.N.J.I School kannauj, India</div>
+      <p class="edu-desc">Pursued pre-College studies with intense focus on Mathematics, Physics and Chemistry. Cleared (IIT/JEE Mains) entrance examinations and secured admission to B.tech programme — a major milestone on my Engineering journey.</p>
+    </div>
+    <div class="edu-item reveal">
+      <div class="edu-dot"></div>
+      <div class="edu-year">2024 – Present</div>
+      <div class="edu-degree">Graduation — B.tech(Information technology)</div>
+      <div class="edu-inst">C.C.S.University, Uttar Pradesh, India</div>
+      <p class="edu-desc">Currently pursuing B.tech with a specialisation focus in Information technology. </p>
+    </div>
+  </div>
+</section>
+ 
+<!-- SKILLS -->
+<section id="skills">
+  <p class="sec-label reveal">What I Do</p>
+  <h2 class="sec-title reveal"><em>Skills</em></h2>
+  <div class="sec-bar reveal"></div>
+  <div class="skills-grid">
+    <div class="skill-card reveal" data-pct="85">
+      <div class="skill-ico">⚙️</div>
+      <div class="skill-name">C language</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      <!-- <div class="skill-pct">95% Proficiency</div> -->
+    </div>
+    <div class="skill-card reveal" data-pct="78">
+      <div class="skill-ico">⚙️</div>
+      <div class="skill-name">Java</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      <!-- <div class="skill-pct">88% Proficiency</div> -->
+    </div>
+    <div class="skill-card reveal" data-pct="72">
+      <div class="skill-ico">⚙️</div>
+      <div class="skill-name">Python</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      <!-- <div class="skill-pct">82% Proficiency</div> -->
+    </div>
+    <div class="skill-card reveal" data-pct="80">
+      <div class="skill-ico">⚙️</div>
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      <!-- <div class="skill-pct">95% Proficiency</div> -->
+    </div>
+    <div class="skill-card reveal" data-pct="88">
+      <div class="skill-ico">⚙️</div>
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      <!-- <div class="skill-pct">95% Proficiency</div> -->
+    </div>
+    <div class="skill-card reveal" data-pct="88">
+      <div class="skill-ico">⚙️</div>
+      <div class="skill-name">Javascript</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      <!-- <div class="skill-pct">95% Proficiency</div> -->
+    </div>
+    <div class="skill-card reveal" data-pct="88">
+      <div class="skill-ico">⚙️</div>
+      <div class="skill-name">Scratch</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      <!-- <div class="skill-pct">95% Proficiency</div> -->
+    </div>
+    <div class="skill-card reveal" data-pct="88">
+      <div class="skill-ico">⚙️</div>
+      <div class="skill-name">Data Structure</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      <!-- <div class="skill-pct">95% Proficiency</div> -->
+    </div>
+    <div class="skill-card reveal" data-pct="88">
+      <div class="skill-ico">⚙️</div>
+      <div class="skill-name">Problem-solving</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      <!-- <div class="skill-pct">95% Proficiency</div> -->
+    </div>
+    <div class="skill-card reveal" data-pct="88">
+      <div class="skill-ico">⚙️</div>
+      <div class="skill-name">Git and Github</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      <!-- <div class="skill-pct">95% Proficiency</div> -->
+    </div>
+    <div class="skill-card reveal" data-pct="88">
+      <div class="skill-ico">⚙️</div>
+      <div class="skill-name">Graphic Designer</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      <!-- <div class="skill-pct">95% Proficiency</div> -->
+    </div>
+    <div class="skill-card reveal" data-pct="88">
+      <div class="skill-ico">⚙️</div>
+      <div class="skill-name">Graphic Designer</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      <!-- <div class="skill-pct">95% Proficiency</div> -->
+    </div>
+  </div>
+</section>
+ 
+<!-- HOBBIES -->
+<section id="hobbies">
+  <p class="sec-label reveal">Beyond Medicine</p>
+  <h2 class="sec-title reveal">My <em>Hobbies</em></h2>
+  <div class="sec-bar reveal"></div>
+  <div class="hobbies-grid">
+    <div class="hobby-card reveal">
+      <span class="hobby-ico">📚</span>
+      <div class="hobby-name">Reading</div>
+      <div class="hobby-sub">finacial, philosophy and fiction — always a book in hand.</div>
+    </div>
+    <div class="hobby-card reveal">
+      <span class="hobby-ico">🏔️</span>
+      <div class="hobby-name">Solo Traveling</div>
+      <div class="hobby-sub">Exploring new cities, cultures and landscapes completely solo.</div>
+    </div>
+    <div class="hobby-card reveal">
+      <span class="hobby-ico">🎵</span>
+      <div class="hobby-name">Music</div>
+      <div class="hobby-sub">From classical to indie — music is my daily companion and therapy.</div>
+    </div>
+    <div class="hobby-card reveal">
+      <span class="hobby-ico">🎬</span>
+      <div class="hobby-name">photography</div>
+      <div class="hobby-sub">I am very passionate and sharing my journey online.</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- GALLERY -->
+<section id="gallery">
+  <p class="sec-label reveal">Visual World</p>
+  <h2 class="sec-title reveal">Achievements <em>Gallery</em></h2>
+  <div class="sec-bar reveal"></div>
+  <div class="gallery-layout">
+    <div class="gallery-intro reveal">
+      <p><strong>Inside the world of Information technology</strong> — Participated in technical events and coding competitions at college level, enhancing problem-solving and analytical skills.</p>
+      <p>Successfully completed certification courses in Java, Web Development, and Spring Boot.</p>
+      <p>Worked on academic projects demonstrating practical knowledge of software development and system design</p>
+      <div class="gallery-main-imgs">
+        <img src="./images/kevin-canlas-QYHehJ9Iovs-unsplash.jpg" alt="image"/>
+        <img src="./images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg" alt="image"/>
+        <img src="./images/ariel-Oal07Ai4oTk-unsplash.jpg" alt="image"/>
+        <img src="./images/mika-baumeister-J5yoGZLdpSI-unsplash.jpg" alt="image"/>
+      </div>
+    </div>
+    <div class="gallery-sidebar reveal">
+      <img src="./images/6320940216507633929.jpg" alt="Mckinsey.org"/>
+       <img src="./images/6320940216507633921.jpg" alt="N.I.S.M"/>
+       <img src="./images/6320940216507633919.jpg" alt="My Bharat"/>
+       
+      <img src="./images/590f6117-c734-443b-9c64-32104278ae85.jpg" alt="Army Insitute"/>
+      <img src="./images/6320940216507633924.jpg" alt="image"/>
+    
+    </div>
+  </div>
+</section>
+ 
+<!-- RESUME -->
+<section id="resume-section">
+  <div class="resume-inner">
+    <p class="sec-label reveal" style="text-align:center;">Get My CV</p>
+    <h2 class="sec-title reveal" style="text-align:center;">Download <em>Resume</em></h2>
+    <div class="sec-bar reveal" style="margin:8px auto 36px;"></div>
+    <p class="reveal">Want to know more about my experience, education, and achievements? Download my full resume and get a complete picture of my Software Engineer journey.</p>
+    <div class="reveal" style="margin-top:12px;">
+      <!-- <a href="#" class="btn-download" onclick="alert('Please replace this link with your actual resume PDF URL.')"> -->
+      <a href="https://calm-telescope-c31.notion.site/Workfolio-bdd7f0c8943a83a99f82018922fcd0ac?source=copy_link" class="btn-download" onclick="https://calm-telescope-c31.notion.site/Workfolio-bdd7f0c8943a83a99f82018922fcd0ac?source=copy_link">
+        <!-- <a href="resume.html" target="_blank" class="btn-download"></a> -->
+        <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+        Download Resume
+      </a>
+    </div>
+  </div>
+</section>
+ </center>
+<!-- FOOTER -->
+<!-- <footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Suraj Singh</div>
+      <p class="footer-brand-desc">Software Engineer · Web Devlopment · Freelancer · Graphic designer ·</p>
+      <div class="footer-social-row">
+        <a href="https://www.linkedin.com/in/surajsinghsr?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.44v6.3zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.21 24 24 23.23 24 22.27V1.73C24 .77 23.21 0 22.22 0z"/></svg>
+        </a>
+        <a href="https://x.com/surajsingh_sr" target="_blank" aria-label="X">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://instagram.com/_sr.suraj" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://github.com/surajsingh-sr" target="_blank" class="social-link" aria-label="GitHub">
+         <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.929.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .322.216.694.825.576C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z"/></svg>
+         </a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#resume-section">Resume</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="mailto:drsuraj@email.com">📧 www.sr2006@gmail.com</a></li>
+        <li><a href="tel:+91XXXXXXXXXX">📞 +91 7668547569</a></li>
+        <li><a href="#">📍 India</a></li>
+      </ul>
+      <div style="margin-top:24px;">
+        <div class="footer-col-title">Specialisations</div>
+        <ul class="footer-links">
+          <li><a href="#">Software Engineer</a></li>
+          <li><a href="#">Web Devlopment</a></li>
+          <li><a href="#">Freelancer</a></li>
+          <li><a href="#">Graphic designer</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span></span> — Building scalable and efficient digital solutions. Designed &amp; Developed by <span>Suraj Singh</span>.<br>
+    <span style="font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;">All rights reserved.</span><br>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a></p>
+  </div>
+</footer> -->
+
+    
+<footer class="site-footer">
+  <!-- TOP GRID -->
+  <div class="ft-top">
+    <!-- Brand -->
+    <div class="ft-brand">
+      <div class="ft-brand-name">Suraj Singh</div>
+      <div class="ft-brand-roles">
+        <span>Web Development</span>
+        <span>Freelancer</span>
+        <span>Graphic Designer</span>
+      </div>
+      <!-- Email subscribe row -->
+      <div class="ft-email-row">
+    <input
+      class="ft-email-input"
+      id="ftEmailInput"
+      type="email"
+      placeholder="xyz@gmail.com"
+    />
+    <button
+      class="ft-join-btn"
+      id="ftJoinBtn"
+      onclick="handleJoinFree()"
+    >Contact Us</button>
+  </div>
+      <!-- Social icons -->
+      <div class="ft-socials">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/surajsinghsr?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-link" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.44v6.3zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.21 24 24 23.23 24 22.27V1.73C24 .77 23.21 0 22.22 0z"/></svg>
+      </a>
+      <a href="https://x.com/surajsingh_sr" target="_blank" class="social-link" aria-label="X (Twitter)">
+        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="https://github.com/surajsingh-sr" target="_blank" class="social-link" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.929.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .322.216.694.825.576C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="https://instagram.com/_sr.suraj" target="_blank" class="social-link" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+      </div>
+    </div>
+    <!-- Quick Links -->
+    <!-- <div class="ft-col">
+      <div class="ft-col-title">Quick Links</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Hobbies</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Resume</a></li>
+      </ul>
+    </div> -->
+    <!-- Contact -->
+    <div class="ft-col">
+      <div class="ft-col-title">Contact</div>
+      <ul>
+        <li><a href="mailto:www.sr2006@gmail.com">📧 www.sr2006@gmail.com</a></li>
+        <li><a href="#">📍 India</a></li>
+      </ul>
+    </div>
+    <!-- Specialisations -->
+    <!-- <div class="ft-col">
+      <div class="ft-col-title">Specialisations</div>
+      <ul>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">Freelancer</a></li>
+        <li><a href="#">Graphic Designer</a></li>
+      </ul>
+    </div> -->
+  </div><!-- /ft-top -->
+  <!-- GIANT NAME -->
+  <div class="ft-giant">
+    <span class="ft-giant-text">Suraj singh</span>
+  </div>
+  <!-- BOTTOM BAR -->
+  <div class="ft-bottom">
+    <div class="ft-copy">
+      © 2026 <span>SR</span> — Building scalable and efficient digital solutions.
+      Designed &amp; Developed by <span>SR</span>.<br>
+      <span style="font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:rgba(232,228,222,.22);">All rights reserved.</span>
+    </div>
+    <div class="ft-policy">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+</footer>
+
+ 
+
+</body>
+</html>
